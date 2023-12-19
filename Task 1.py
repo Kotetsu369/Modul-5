@@ -13,9 +13,9 @@ get_thread('four')
 get_thread('five')
 
 end_time = time.time()  # время окончания выполнения
-execution_time = end_time - start_time  # вычисляем время выполнения
+execution_time_1 = end_time - start_time  # вычисляем время выполнения
 
-print(f"Время выполнения программы: {execution_time} секунд")
+print(f"Время выполнения программы: {execution_time_1} секунд")
 
 import threading
 
@@ -61,8 +61,10 @@ async  def main():
 
 asyncio.run(main())
 end_time = time.time()  # время окончания выполнения
-execution_time = end_time - start_time  # вычисляем время выполнения
+execution_time_2 = end_time - start_time  # вычисляем время выполнения
 
-print(f"Время выполнения программы: {execution_time} секунд")
+print(f"Время выполнения программы: {execution_time_2} секунд")
+
+print(f'Быстрее задание 2 на {execution_time_1-execution_time_2} сек')
 
 
